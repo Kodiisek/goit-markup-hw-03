@@ -12,12 +12,19 @@ body {
     font-weight: 400;
     letter-spacing: 0.32px;
     line-height: 150%;
-    
 }
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+}
+.list {
+    list-style: none;
+    background: var(--WHITE, #FFF);
+}
+
 .link {
     text-decoration: none;
     color: var(--SLATE, #434455);
@@ -30,7 +37,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .link:focus {
     color: var(--SLATE, #434455);
 }
-
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
 .address {
     font-style: normal;
 }
@@ -43,6 +52,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .nav-span {
@@ -54,7 +64,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
-
+.menu{
+    display: flex;
+    gap: 40px;
+}
 .pages {
     color: var(--NAVY-BLUE, #2E2F42);
     font-family: Roboto, sans-serif;
@@ -64,6 +77,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.32px;
     margin-left: 0;
     margin-right: 0;
+    padding: 24px 0;
+    display: flex;
+    gap: 40px;
 }
 
 .pages:hover {
@@ -95,6 +111,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .top-html {
     background-color: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 0;
 }
 
 .top-html:focus {
@@ -109,6 +126,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 700;
     line-height: 107.143%;
     letter-spacing: 1.12px;
+    max-width: 496px;
 }
 
 .order-button {
@@ -120,6 +138,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 150%;
     letter-spacing: 0.64px;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-button:hover {
@@ -133,20 +156,53 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--OCEAN, #404BBF);
     background-color: #404BBF;
 }
+.first-html{
+    padding: 120px 0;
+}
+.first-html-list{
+    gap: 24px;
+}
+.first-point-one{
+    width: calc((100% - 72px) / 4);
+}   
 
 .third-html {
     background-color: var(--CLOUD, #F4F4FD);
+    padding: 120px 0;
 }
+.third-heading{
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 
-.list {
-    list-style: none;
-    background: var(--WHITE, #FFF);
+}
+.third-html-list{
+    display: flex;
 }
 
 .images-list {
     background: var(--WHITE, #FFF);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
+.employees{
+    padding: 32px 0px;
+
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px,
+}
 
 .buttons {
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -158,8 +214,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.64px;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+
 }
 
 .buttons:hover {
@@ -172,6 +229,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 150%;
     letter-spacing: 0.64px;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .buttons:focus {
@@ -184,8 +242,28 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 150%;
     letter-spacing: 0.64px;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
+.portfolio-images-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.offers{
+    width: calc((100% - 48px) / 3);
+}
+
+.offer-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px,
+}
+.second-html{
+    padding-bottom: 120px;
+}
 .second-heading {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -195,6 +273,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 111.111%;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.second-html-list{
+    display: flex;
+    gap: 24px;
+
+}
+
+.second-point-one{
+    width: calc((100% - 48px) / 3);
 }
 
 .third-header {
@@ -204,12 +293,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .paragraph {
     font-size: 16px;
 }
-
+.paragraph-employee{
+    font-size: 16px;
+    text-align: center
+}
+.portfolio-section-one{
+    padding: 96px 0 120px 0
+}
 .portfolio-image-link:hover {
     color: var(--OCEAN, #404BBF);
 }
@@ -238,6 +336,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -248,6 +347,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .footer-span {
@@ -268,9 +368,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 150%;
     letter-spacing: 0.32px;
     background-color: var(--NAVY-BLUE, #2E2F42);
+    max-width: 264px;
 }
 .container{
+    display: flex;
     width: 1158px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
 }
