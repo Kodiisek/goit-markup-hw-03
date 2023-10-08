@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+.visually-hidden {
+    display: none;
+}
 img {
     display: block;
 }
@@ -47,6 +50,9 @@ img {
     gap: 40px;
 }
 
+.addresslist{
+    gap: 40px;
+}
 .nav-logo {
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway, sans-serif;
@@ -189,6 +195,7 @@ img {
 }
 .third-html-list{
     display: flex;
+    gap: 24px;
 }
 
 .images-list {
@@ -254,18 +261,16 @@ img {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
-    width: calc((100% - 48px) / 3);
+    row-gap: 48px;    
 }
 .offers{
-    width: calc((100% - 48px) / 3);
+    width: calc(100% - 48px) / 3;
 }
 
 .offer-container{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 .second-html{
     padding-bottom: 120px;
@@ -329,6 +334,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px
 }
 
 .paragraph-link-portfolio {
@@ -343,6 +349,7 @@ img {
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 100px 0;
+    display: inline-block;
 }
 
 .footer-logo {
@@ -354,6 +361,7 @@ img {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-span {
