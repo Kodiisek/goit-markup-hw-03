@@ -55,8 +55,15 @@ img {
     display: flex;
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0 15px;
+    padding-right: 0 15px;
+    text-align: center;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .link:hover {
@@ -68,11 +75,13 @@ img {
 }
 .header{
     border-bottom: 1px solid #e7e9fc;
+    
 }
 .address {
     font-style: normal;
     display: flex;
     gap: 40px;
+    margin-left: 332px;
 }
 
 .addresslist{
@@ -87,6 +96,7 @@ img {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     margin-right: 76px;
+    
 }
 
 .nav-span {
@@ -133,6 +143,10 @@ img {
     letter-spacing: 0.32px;
     margin-left: 0;
     margin-right: 0;
+    padding: 24px 0;
+    display: flex;
+    gap: 40px;
+    
 }
 
 .contacts:hover {
@@ -146,6 +160,9 @@ img {
 .top-html {
     background-color: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
+    display: flex;
+    align-items: center;
+
 }
 
 .top-html:focus {
@@ -154,13 +171,16 @@ img {
 
 .top-heading {
     color: var(--WHITE, #FFF);
-    text-align: center;
     font-family: Roboto, sans-serif;
     font-size: 56px;
     font-weight: 700;
     line-height: 107.143%;
     letter-spacing: 1.12px;
     max-width: 496px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .order-button {
@@ -177,6 +197,11 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+        
 }
 
 .order-button:hover {
@@ -298,6 +323,9 @@ img {
     border-top: none;
     padding: 32px 16px;
 }
+.container-top-html{
+    
+}
 .second-html{
     padding-bottom: 120px;
 }
@@ -409,7 +437,4 @@ img {
     max-width: 264px;
 }
 
-.navigation{
-    display: flex;
-    align-items: center;
-}
+
