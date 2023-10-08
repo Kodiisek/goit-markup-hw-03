@@ -43,7 +43,6 @@ img {
 .link {
     text-decoration: none;
     color: var(--SLATE, #434455);
-    display: inline-block;
 }
 
 .container {
